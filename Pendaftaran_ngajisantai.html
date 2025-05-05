@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>Ngaji Santai</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0; 
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #c6f0f9, #f7f5fb);
+    color: #333;
+    min-height: 600px;
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+  }
+
+  header {
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #a3d8f4;
+    margin-bottom: 15px;
+  }
+  header h1 {
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: #2a6fdb;
+    margin-bottom: 8px;
+  }
+  header p {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.4;
+  }
+  header p strong {
+    color: #1e4fa3;
+  }
+
+  section#packages {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(42, 111, 219, 0.15);
+    padding: 15px 20px;
+    margin-bottom: 20px;
+  }
+  section#packages h2 {
+    text-align: center;
+    color: #2a6fdb;
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
+  .package-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .package-list li {
+    border: 1.5px solid #2a6fdb;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    padding: 12px 15px;
+    font-weight: 600;
+    color: #0d3a8a;
+    box-shadow: 0 4px 10px rgba(42, 111, 219, 0.1);
+  }
+  .package-list li span.price {
+    float: right;
+    color: #1e4fa3;
+    font-weight: 700;
+  }
+  .package-list li:last-child {
+    margin-bottom: 0;
+  }
+  .package-list small {
+    font-weight: 400;
+    color: #555;
+    display: block;
+    margin-top: 6px;
+    font-size: 0.85rem;
+  }
+
+  form {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(42, 111, 219, 0.15);
+    padding: 20px;
+    margin-bottom: 15px;
+  }
+  form h2 {
+    text-align: center;
+    color: #2a6fdb;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 1.3rem;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #1e4fa3;
+  }
+  input[type="text"],
+  input[type="number"],
+  select,
+  textarea {
+    width: 100%;
+    border: 1.5px solid #a3d8f4;
+    border-radius: 8px;
+    padding: 8px 12px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    color: #333;
+    resize: vertical;
+    transition: border-color 0.3s ease;
+  }
+  input[type="text"]:focus,
+  input[type="number"]:focus,
+  select:focus,
+  textarea:focus {
+    outline: none;
+    border-color: #2a6fdb;
+    box-shadow: 0 0 8px #add8ffaa;
+  }
+  textarea {
+    min-height: 70px;
+    font-family: inherit;
+  }
+
+  .radio-group {
+    margin-bottom: 15px;
+  }
+  .radio-group label {
+    font-weight: 500;
+    color: #0d3a8a;
+    margin-right: 15px;
+    cursor: pointer;
+  }
+  .radio-group input[type="radio"] {
+    margin-right: 6px;
+    cursor: pointer;
+  }
+
+  button#submitBtn {
+    background: #2a6fdb;
+    border: none;
+    color: white;
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: 14px;
+    border-radius: 10px;
+    width: 100%;
+    cursor: pointer;
+    box-shadow: 0 6px 12px rgba(42, 111, 219, 0.6);
+    transition: background-color 0.3s ease;
+  }
+  button#submitBtn:hover,
+  button#submitBtn:focus {
+    background: #1e4fa3;
+    outline: none;
+  }
+
+  footer {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #777;
+    padding-top: 10px;
+  }
+
+  @media (max-width: 400px) {
+    body {
+      max-width: 100vw;
+      padding: 12px 10px;
+    }
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Ngaji Santai</h1>
+    <p><strong>Pentingnya belajar Al Quran sebagai pedoman hidup.</strong> Dibimbing mentor berpengalaman di bidang terkait, dengan media pembelajaran Zoom Meeting atau video call WhatsApp.</p>
+  </header>
+
+  <section id="packages">
+    <h2>Pilihan Paket Mengaji</h2>
+    <ul class="package-list">
+      <li>
+        Seminggu 2 kali <span class="price">Rp 200.000 / bulan</span>
+        <small>Per sesi kurang lebih 45 menit, bebas pilih jam dan hari</small>
+      </li>
+      <li>
+        Seminggu 3 kali <span class="price">Rp 300.000 / bulan</span>
+        <small>Per sesi kurang lebih 45 menit, bebas pilih jam dan hari</small>
+      </li>
+      <li>
+        Seminggu 4 kali <span class="price">Rp 400.000 / bulan</span>
+        <small>Per sesi kurang lebih 45 menit, bebas pilih jam dan hari</small>
+      </li>
+    </ul>
+  </section>
+
+  <form id="orderForm">
+    <h2>Data Pemesan</h2>
+    <label for="name">Nama</label>
+    <input type="text" id="name" name="name" placeholder="Masukkan nama lengkap" required autocomplete="name" />
+
+    <label for="region">Asal Daerah</label>
+    <input type="text" id="region" name="region" placeholder="Masukkan asal daerah" required autocomplete="address-level1" />
+
+    <label for="age">Umur</label>
+    <input type="number" id="age" name="age" placeholder="Masukkan umur" min="1" max="120" required />
+
+    <label for="learningChoice">Pilihan Belajar</label>
+    <select id="learningChoice" name="learningChoice" required>
+      <option value="" disabled selected>Pilih salah satu</option>
+      <option value="Iqro">Iqro</option>
+      <option value="Al Quran">Al Quran</option>
+      <option value="Tahfiz">Tahfiz</option>
+    </select>
+
+    <label>Media Pembelajaran</label>
+    <div class="radio-group">
+      <label><input type="radio" name="media" value="Zoom Meeting" required /> Zoom Meeting</label>
+      <label><input type="radio" name="media" value="Video Call WhatsApp" required /> Video Call WhatsApp</label>
+    </div>
+
+    <label for="feedback">Kritik dan Saran</label>
+    <textarea id="feedback" name="feedback" placeholder="Tulis kritik dan saran Anda di sini..."></textarea>
+
+    <button type="submit" id="submitBtn">Pesan Sekarang via WhatsApp</button>
+  </form>
+
+  <footer>
+    &copy; 2024 Ngaji Santai - All Rights Reserved
+  </footer>
+
+<script>
+  const form = document.getElementById('orderForm');
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const name = form.name.value.trim();
+    const region = form.region.value.trim();
+    const age = form.age.value.trim();
+    const learningChoice = form.learningChoice.value;
+    const media = form.media.value;
+    const feedback = form.feedback.value.trim();
+
+    if (!name || !region || !age || !learningChoice || !media) {
+      alert('Mohon lengkapi semua data yang diperlukan.');
+      return;
+    }
+
+    let message = `Halo,%0ASaya ingin melakukan pemesanan Paket Ngaji Santai dengan detail berikut:%0A%0A`;
+    message += `Nama: ${encodeURIComponent(name)}%0A`;
+    message += `Asal Daerah: ${encodeURIComponent(region)}%0A`;
+    message += `Umur: ${encodeURIComponent(age)}%0A`;
+    message += `Pilihan Belajar: ${encodeURIComponent(learningChoice)}%0A`;
+    message += `Media Pembelajaran: ${encodeURIComponent(media)}%0A`;
+    if(feedback){
+      message += `Kritik dan Saran: ${encodeURIComponent(feedback)}%0A`;
+    }
+    message += `%0ATerima kasih.`;
+
+    const phoneNumber = '6282216315488'; // WhatsApp international format, no plus sign
+    const url = `https://wa.me/${phoneNumber}?text=${message}`;
+
+    window.open(url, '_blank');
+  });
+</script>
+</body>
+</html>
+
